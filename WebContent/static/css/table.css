@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-left: 1px solid #888;
+	border-top: 1px solid #888;
+	background: white;
+	margin: 0px auto;
+}
+input{
+	border: none;
+}
+th, td {
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	padding: 5px 15px;
+	font-size: 12px;
+}
+.f17{
+	font-size: 17px;
+}
+th {
+	font-weight: bold;
+	background: #ccc;
+}
+
+body {
+	font-family: "宋体";
+	background-color: white;
+}
+
+.cen {
+	text-align: center;
+}
+
+.f16 {
+	font-size: 16pt;
+}
+
+.f22 {
+	font-size: 22pt;
+}
+
+.f24 {
+	font-size: 24pt;
+}
+
+.f12 {
+	font-size: 12pt;
+}
+
+.fw {
+	font-weight: bold;
+}
+
+.top10 {
+	padding-top: 15px;
+}
+
+.w500{
+	width: 250px;
+}
+.w510{
+	width: 300px;
+}
+.w350{
+	width: 350px;
+}
+.w150 {
+	width: 50px;
+}
+.w200{
+	width: 200px;
+}
+.w355 {
+	width: 177px;
+}
+
+.h360 {
+	height: 150px;
+}
+
+.h72 {
+	height: 30px;
+}
+
+.h88 {
+	height: 44px;
+}
+
+.h200 {
+	height: 100px;
+}

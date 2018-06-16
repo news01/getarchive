@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nsfy.dao.SysAjStDao">
+
+	<select id="findList" resultType="SysAjSt">
+		SELECT id AS id, ajid AS ajid,stid AS stid FROM sys_aj_st WHERE ajid=#{ajid}
+	</select>
+	
+	<select id="findStid" resultType="SysAjSt" parameterType="SysAjSt">
+		SELECT * FROM sys_aj_st WHERE stid = #{stid} AND ajid = #{ajid}
+	</select>
+	
+	<insert id="insert" parameterType="SysAjSt">
+		INSERT INTO sys_aj_st (id,ajid,stid) VALUES(#{id},#{ajid},#{stid})
+	</insert>
+	<update id="updateId" parameterType="SysAjSt">
+		UPDATE sys_aj_st SET id = #{id} WHERE ajid = #{ajid} AND stid = #{stid}
+	
+	</update>
+	
+	
+</mapper>

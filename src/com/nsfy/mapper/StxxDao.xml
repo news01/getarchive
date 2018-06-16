@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nsfy.dao.StxxDao">
+
+	<select id="findByCaseNum" resultType="Stxx">
+		SELECT * FROM stxx WHERE case_num = #{caseNum}
+	</select>
+	<select id="findByCaseId" resultType="Stxx">
+		SELECT * FROM stxx WHERE id = #{id}
+	</select>
+	
+	<insert id="insertStxx" parameterType="SysAjSt">
+		INSERT INTO stxx (
+		id,
+		case_num,
+		zsfg,
+		case_case,
+		pla,
+		defen,
+		plaRoleName,
+		defenRoleName,
+		sjg,
+		sjyp,
+		sfbq,
+		ssbd,
+		in_date,
+		add_date,
+		third,
+		book_num,
+		all_books,
+		slf,
+		sycx
+		) VALUES(
+		#{id},
+		#{case_num},
+		#{zsfg},
+		#{caseCase},
+		#{pla},
+		#{defen},
+		#{plaRoleName},
+		#{defenRoleName},
+		#{sjg},
+		#{sjyp},
+		#{sfbq},
+		#{ssbd},
+		#{inDate},
+		#{addDate},
+		#{third},
+		#{bookNum},
+		#{allBooks},
+		#{slf},
+		#{sycx}
+		)
+	</insert>
+	
+	
+</mapper>
